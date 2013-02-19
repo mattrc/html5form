@@ -21,10 +21,13 @@ jQuery(function($) {
 ```
 
 ## Documentation
-_(Coming soon)_
+Visit the [Home page][home]
 
 ## Examples
-_(Coming soon)_
+Try the [Demo][demo]
 
 ## Release History
 _(Nothing yet)_
+
+[home]: http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html
+[demo]: http://www.matiasmancini.com.ar/ajax-jquery-validation-html5-form.html
