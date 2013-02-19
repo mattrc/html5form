@@ -1,0 +1,30 @@
+{
+  "name": "html5form",
+  "title": "jQuery HTML5 Form",
+  "description": "jQuery HTML5 Form Plugin",
+  "version": "1.5.0",
+  "homepage": "http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html",
+  "author": {
+    "name": "Matias Mancini",
+    "email": "info@matiasmancini.com.ar",
+    "url": "http://matiasmancini.com.ar/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:matmancini/html5form.git"
+  },
+  "bugs": "https://github.com/matmancini/html5form/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.1"
+  },
+  "keywords": ["html5", "form", "autocomplete", "placeholder", "required"],
+  "docs": "http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html",
+  "download": "http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html",
+  "demo": "http://www.matiasmancini.com.ar/ajax-jquery-validation-html5-form.html"
+}
