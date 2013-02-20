@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/demo.css">
+		<title>jQuery HTML5 Form DEMO</title>
+    </head>
+    <body>
+
+		<div class="container">
+
+			<header>
+				<h1>jQuery HTML5 Form test</h1>
+				<a href="http://matiasmancini.com.ar/" title="Matias Mancini" target="_blank">http://matiasmancini.com.ar/</a>
+			</header>
+
+			<form name="form1" id="form1" method="post" action="upload.php">
+
+				<fieldset>
+					<legend>Input elements</legend>
+
+					<input type="hidden" name="hidden" value="25670029"/>
+
+					<label for="nombre">Text</label>
+					<input type="text" name="text1" id="text1" maxlength="40" placeholder="Enter text" title="Enter text" required/> Required
+
+					<label for="apellido">Text</label>
+					<input type="text" name="text2" id="text2" maxlength="40" title="Enter text" placeholder="Enter text" />
+
+					<label for="number">Number</label>
+					<input type="number" name="number1" id="number1" maxlength="10" title="Number" placeholder="25670096" required /> Required
+
+					<label for="psw">Password</label>
+					<input type="password" name="psw" id="psw" title="Password" maxlength="5" required /> Required
+
+					<label for="email1">Primary Email</label>
+					<input type="email" name="email1" id="email1" maxlength="40" title="Primary email" placeholder="email1@example.com" required/> Required
+
+					<label for="email2">Secondary email</label>
+					<input type="email" name="email2" id="email2" maxlength="40" title="Secondary email" placeholder="email2@example.com"/>
+
+					<label for="sitioweb1">URL - Required</label>
+					<input type="url" name="sitioweb1" id="sitioweb1" maxlength="40" title="Sitio Web 1" placeholder="http://" required /> Required
+
+					<label for="sitioweb2">URL</label>
+					<input type="url" name="sitioweb2" id="sitioweb2" maxlength="40" title="Sitio Web 2" placeholder="http://" />
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Select</legend>
+
+					<label for="pais" title="Pais">Pais</label>
+					<select name="pais">
+						<option>Seleccione un País</option>
+						<option value="ar">Argentina</option>
+						<option value="br">Brasil</option>
+						<option value="uy">Uruguay</option>
+					</select>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Radio</legend>
+
+					<label for="doc-dni">
+						<input type="radio" name="doc" id="doc-dni" value="dni"/> DNI
+					</label>
+					<label for="doc-lc">
+						<input type="radio" name="doc" id="doc-lc" value="lc"/> LC
+					</label>
+					<label for="doc-le">
+						<input type="radio" name="doc" id="doc-le" value="le"/> LE
+					</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Checkbox</legend>
+
+					<label for="fuma">
+						<input type="checkbox" name="fuma" id="fuma"/> Fuma?
+					</label>
+
+					<label for="mas10">
+						<input type="checkbox" name="mas10" id="mas10"/> Más de 10 por día
+					</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Textarea</legend>
+
+					<label for="comentario1">Comentario 1</label>
+					<textarea name="comentario1" id="comentario1" title="Comentario 1" cols="30" rows="2" maxlength="5" placeholder="Comentario uno" required ></textarea> (Required / Maxlength 5)
+
+					<label for="comentario2">Comentario 2</label>
+					<textarea name="comentario2" id="comentario2" title="Comentario 2" cols="30" rows="2" maxlength="10" placeholder="Comentario dos" required></textarea> (Maxlength 10)
+
+					<label for="comentario3">Comentario 3</label>
+					<textarea name="comentario3" id="comentario3" title="Comentario 3" cols="30" rows="2" placeholder="Comentario tres"></textarea>
+
+				</fieldset>
+
+				<button class="submit">SEND</button>
+				<input type="submit"/>
+
+			</form>
+
+			<!-- Response DIV -->
+			<div id="response1"></div>
+
+
+        <!-- JavaScript -->
+        <script src="../libs/jquery/jquery.js"></script>
+        <script src="../src/html5form.js"></script>
+
+        <script>
+			jQuery(function ($) {
+
+				$('#form1').html5form({
+					allBrowsers: true
+				});
+
+			});
+        </script>
+
+    </body>
+</html>
